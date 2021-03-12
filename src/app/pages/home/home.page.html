@@ -1,0 +1,89 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" ios="apps" md="apps"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-title class="slide-title">
+      aku<b class="bp">pay</b> <img src="assets/img/akupa.png">
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button color="secondary">
+        <ion-badge>99</ion-badge>
+      </ion-button>
+      <ion-button color="secondary">
+        <ion-icon slot="icon-only" ios="person-outline" md="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+
+  <ion-text color="secondary">
+    <h6>Welcome Back</h6>
+  </ion-text>
+  <ion-text color="secondary">
+    <h3>Adaeze Bisola</h3>
+  </ion-text>
+
+  <ion-card class="background">
+    <div class="ion-padding">
+      <ion-text class="text-white ion-padding">
+        <h6>Current Deposit</h6>
+      </ion-text>
+      <ion-text class="text-white ion-padding row">
+        <h1>16, 457</h1><sup>ZWL</sup>
+      </ion-text>
+
+      <ion-button color="primary" class="text-white" [routerLink]="['/home']">
+        Transaction History
+      </ion-button>
+    </div>
+  </ion-card>
+
+  <ion-card>
+    <ion-text color="secondary" class="ion-padding">
+      <h6 class="text text-center">What do you want to do?</h6>
+    </ion-text>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-button color="secondary">
+              <ion-icon class="text-white" name="arrow-up"></ion-icon>
+            </ion-button>
+            <ion-text>
+              <p>Deposit Money</p>
+            </ion-text>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-button color="secondary">
+              <ion-icon class="text-white" name="arrow-down"></ion-icon>
+            </ion-button>
+            <ion-text>
+              <p>Withdraw Money</p>
+            </ion-text>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-button color="secondary">
+              <ion-icon class="text-white"  name="add"></ion-icon>
+            </ion-button>
+            <ion-text>
+              <p>More</p>
+            </ion-text>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </ion-card>
+</ion-content>

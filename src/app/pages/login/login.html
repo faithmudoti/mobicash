@@ -1,26 +1,32 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header color="secondary">
+  <ion-toolbar color="secondary">
     <ion-buttons slot="start">
-      <ion-menu-button></ion-menu-button>
+      <ion-back-button></ion-back-button>
     </ion-buttons>
-
-    <ion-title>Login</ion-title>
+    <ion-title class="title-btn" slot="end">Sign Up</ion-title>
   </ion-toolbar>
 </ion-header>
+<ion-content >
+  <ion-card class="ion-padding">
+    <div class="login-logo">
+      <img src="assets/img/akupa.png" alt="Ionic logo">
+    </div>
 
-<ion-content>
-  <div class="login-logo">
-    <img src="assets/img/appicon.svg" alt="Ionic logo">
-  </div>
+    <div>
+      <h2 class="text text-white">Welcome back.</h2>
 
-  <form #loginForm="ngForm" novalidate>
-    <ion-list>
-      <ion-item>
-        <ion-label position="stacked" color="primary">Username</ion-label>
-        <ion-input [(ngModel)]="login.username" name="username" type="text" #username="ngModel" spellcheck="false" autocapitalize="off"
-          required>
-        </ion-input>
-      </ion-item>
+      <p class="text text-white">Sign in with your phone number and password or with your username to continue</p>
+      <ion-input></ion-input>
+    </div>
+
+    <div class="background">
+
+      <div class="background" position="stacked" color="primary" class="text-white">Username</div>
+      <ion-input class="background" [(ngModel)]="login.username" name="username" type="text" #username="ngModel"
+                 spellcheck="false" autocapitalize="off"
+                 required>
+      </ion-input>
+
 
       <ion-text color="danger">
         <p [hidden]="username.valid || submitted == false" class="ion-padding-start">
@@ -28,27 +34,26 @@
         </p>
       </ion-text>
 
-      <ion-item>
-        <ion-label position="stacked" color="primary">Password</ion-label>
-        <ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
-        </ion-input>
-      </ion-item>
+
+      <div position="stacked" color="primary" class="text-white">Password</div>
+      <ion-input [(ngModel)]="login.password" name="password" type="password" #password="ngModel" required>
+      </ion-input>
+
 
       <ion-text color="danger">
         <p [hidden]="password.valid || submitted == false" class="ion-padding-start">
           Password is required
         </p>
       </ion-text>
-    </ion-list>
 
-    <ion-row>
-      <ion-col>
-        <ion-button (click)="onLogin(loginForm)" type="submit" expand="block">Login</ion-button>
-      </ion-col>
-      <ion-col>
-        <ion-button (click)="onSignup()" color="light" expand="block">Signup</ion-button>
-      </ion-col>
-    </ion-row>
-  </form>
 
+    </div>
+
+  </ion-card>
+  <div class="row mt--10">
+    <div class="col-9"></div>
+    <ion-button color="primary" class="row col-3" [routerLink]="['/home']">
+      <ion-icon class="text-white" slot="icon-only" name="arrow-forward-outline"></ion-icon>
+    </ion-button>
+  </div>
 </ion-content>

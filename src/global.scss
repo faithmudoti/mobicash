@@ -23,7 +23,8 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
-
+@import "~bootstrap/dist/css/bootstrap.css";
+//@import "assets/Nunito_Sans/NunitoSans-Regular.ttf";
 
 /*
  * App CSS
@@ -33,3 +34,26 @@
  */
 
 @import "./app/app.scss";
+
+
+@font-face {
+  font-family: "NunitoSans";
+  src: local("NunitoSans"), url(./assets/Nunito_Sans/NunitoSans-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: NunitoSans, serif;
+}
+
+.background {
+ //background: url("assets/img/background.png");
+  background-color: #4433A6;
+
+}
+.p1{
+  font-size: 12px;
+  color: var(--ion-text-color, #a9a8a8);
+  text-align: left;
+  opacity: 100%;
+}
+

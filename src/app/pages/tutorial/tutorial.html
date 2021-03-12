@@ -1,49 +1,67 @@
-<ion-header no-border>
-  <ion-toolbar>
-    <ion-buttons slot="end">
-      <ion-button color='primary' (click)="startApp()" [hidden]="!showSkip">Skip</ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content fullscreen="true">
   <ion-slides #slides (ionSlideWillChange)="onSlideChangeStart($event)" pager="false">
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />
-      <h2 class="slide-title">
-        Welcome to
-        <b>ICA</b>
+    <ion-slide class="full slide-1">
+      <!--      <img src="assets/img/ica-slidebox-img-1.png" class="slide-image" />-->
+      <h2 class="slide-title main">
+        aku<b class="bp">pay</b> <img src="assets/img/akupa.png">
       </h2>
-      <p>
-        The
-        <b>ionic conference app</b> is a practical preview of the ionic framework in action, and a demonstration of proper code
-        use.
-      </p>
+    </ion-slide>
+    <ion-slide class="ionslide">
+      <ion-card>
+        <h2 class="slide-title slide-2">aku<b class="bp">pay</b> <img src="assets/img/akupa.png"></h2>
+        <p>
+          PAYMENTS.<br> WEALTH CREATION</p>
+        <p class="p1">Make swift & secure payments.
+          Get access to wealth creation services.</p>
+      </ion-card>
+      <div class="bottom-div row">
+        <p class="mt-40 text-white"><a class="text-white" routerLink="/login">  Sign In</a></p>
+        <div class="vl">
+          <p class="mt-40 text-white"> Sign In</p>
+        </div>
+      </div>
     </ion-slide>
 
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-2.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic?</h2>
-      <p>
-        <b>Ionic Framework</b> is an open source SDK that enables developers to build high quality mobile apps with web technologies
-        like HTML, CSS, and JavaScript.</p>
+    <ion-slide class="ionslide">
+      <ion-card>
+        <img class="tutorial-image" src="assets/img/akupa.png">
+        <br>
+        <img class="tutorial2-image" src="assets/img/tutorial1.png"/>
+        <br>
+        <p class="slide-3">
+          Easy Deposit, <br>
+          Quick Transfers and Withdrawal </p>
+        <p class="p1">
+          Send, receive and withdraw money easily with only a phone number instantly. - Agents, ATM & Banks
+        </p>
+      </ion-card>
+      <div class="bottom-div row">
+        <p class="mt-40 text-white"> <a class="text-white" routerLink="/login">  Sign In</a></p>
+        <div class="vl">
+          <p class="mt-40 text-white"> Sign In</p>
+        </div>
+      </div>
     </ion-slide>
 
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-3.png" class="slide-image" />
-      <h2 class="slide-title">What is Ionic Appflow?</h2>
-      <p>
-        <b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new
-        level of app development agility to mobile dev teams.</p>
-    </ion-slide>
-
-    <ion-slide>
-      <img src="assets/img/ica-slidebox-img-4.png" class="slide-image" />
-      <h2 class="slide-title">Ready to Play?</h2>
-      <ion-button fill="clear" (click)="startApp()">
-        Continue
-        <ion-icon slot="end" name="arrow-forward"></ion-icon>
-      </ion-button>
+    <ion-slide class="ionslide">
+      <ion-card>
+        <img class="tutorial-image" src="assets/img/akupa.png">
+        <br>
+        <img class="tutorial3-image" src="assets/img/tutorial3.png"/>
+        <br>
+        <p class="slide-3">
+          Secure Transactions. <br>
+          Everytime.  </p>
+        <p class="p1">
+          Multi-level security. Fully compliant to international standards of financial security.
+        </p>
+      </ion-card>
+      <div class="bottom-div row">
+        <p class="mt-40 text-white"><a class="text-white" routerLink="/login">  Sign In</a></p>
+        <div class="vl">
+          <p class="mt-40 text-white"> Sign In</p>
+        </div>
+      </div>
     </ion-slide>
   </ion-slides>
 </ion-content>
