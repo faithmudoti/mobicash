@@ -1,0 +1,21 @@
+.p1{
+  font-weight: bold;
+}
+.p5{
+  padding-top: 5px !important;
+}
+out{
+  outline: #4433A6;
+}
+
+
+:host {
+  ion-item {
+    --border-width: 2px;
+    --border-color: #403E39;
+    --border-radius: 8px;
+    //--border-color: var(--ion-color-danger, #f1453d);
+    --highlight-color-invalid: red; // invalid underline color
+    --highlight-color-valid: green; // valid underline color
+  }
+}
